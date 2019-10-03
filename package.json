@@ -4,8 +4,12 @@
   "description": "Analizador Lexico",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src",
+    "start": "node src"
   },
   "author": "Alejandro",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
 }
