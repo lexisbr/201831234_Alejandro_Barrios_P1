@@ -30,6 +30,14 @@ app.get('/info.html',(req,res) => {
     // res.send('<h1> orale puto </h1>')
    res.sendFile(path.join(__dirname+'/views/analizador.html'));
  });
+ app.get('/archivo.js',(req,res) => {
+  // res.send('<h1> orale puto </h1>')
+ res.sendFile(path.join(__dirname+'/views/archivo.js'));
+});
+app.get('/leer.js',(req,res) => {
+  // res.send('<h1> orale puto </h1>')
+ res.sendFile(path.join(__dirname+'/views/leer.js'));
+});
 
 
 //escucha

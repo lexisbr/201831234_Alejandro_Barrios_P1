@@ -1,0 +1,8 @@
+int a;
+String i='sho';
+
+
+if(i=="sho")
+{
+a++
+}
