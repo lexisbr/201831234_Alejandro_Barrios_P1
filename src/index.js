@@ -38,6 +38,10 @@ app.get('/leer.js',(req,res) => {
   // res.send('<h1> orale puto </h1>')
  res.sendFile(path.join(__dirname+'/views/leer.js'));
 });
+app.get('/analizador.js',(req,res) => {
+  // res.send('<h1> orale puto </h1>')
+ res.sendFile(path.join(__dirname+'/views/analizador.js'));
+});
 
 
 //escucha

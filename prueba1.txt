@@ -1,8 +1,9 @@
 int a;
-String i='sho';
+Boolean i=true;
 
-
-if(i=="sho")
+if
+if(i)
 {
 a++
 }
+for

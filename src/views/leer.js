@@ -1,7 +1,7 @@
-console.log("ola perros");
+
 var input = myForm.myInput;
 var reader = new FileReader;
-
+var palabrasReservadas = ["if","for","while"]; 
 input.addEventListener('change', onChange);
 
 
@@ -24,10 +24,12 @@ function onLoad() {
   // o lineas.forEach(function(linea){ ... })
   // o lineas.find(function(linea){ return linea == contraseña })
   for(var linea of lineas) {
-    console.log('[linea]', linea)
-    //if(linea === passwordBuscar) {
-      // Encontraste contraseña
-    //}
+    for(var i=0; i<3;i++){
+    if(linea === palabrasReservadas[i]) {
+     // console.log(input.valueAt(i))
+    console.log(linea+" >>Palabra Reservada<<");
+    }
+  }
   }
   
 }

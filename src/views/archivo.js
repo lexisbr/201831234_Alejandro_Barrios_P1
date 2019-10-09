@@ -17,5 +17,5 @@ function leerArchivo(e) {
     elemento.innerHTML = contenido;
   }
   
-  document.getElementById('file-input').addEventListener('change', leerArchivo, false);
+  document.getElementById('myInput').addEventListener('change', leerArchivo, false);
   
