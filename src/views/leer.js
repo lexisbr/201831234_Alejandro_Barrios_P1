@@ -1,7 +1,27 @@
 
 var input = myForm.myInput;
 var reader = new FileReader;
-var palabrasReservadas = ["if","for","while"]; 
+/*var arreglo = [
+  ['posicion1', 'posicion2']
+];*/
+
+/*var automata = new Array(2);
+automata[0]= new Array(2);
+automata[1]= new Array(2);
+for(var i=0;i<4;i++)
+{
+  automata[0][i]="S"+i;
+}
+automata[1][0]="letra";
+automata[1][1]="digito";
+for(var i=0;i<automata.length;i++)
+{
+  for(var o=0;o<automata.length;o++){
+    console.log(automata[o][i]);
+  }
+}*/
+
+var palabrasReservadas = ["if","for","while","int","char","String"]; 
 input.addEventListener('change', onChange);
 
 

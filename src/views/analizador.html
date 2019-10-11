@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Analizador Lexico</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 <body>
-    <h1>Analizador Lexico</h1>
+        <header id="main-header">
+		
+                <a id="logo-header" href="#">
+                <span class="site-name">Analizador Lexico</span>
+                    
+                    <span class="site-desc">Lenguajes formales y de programacion.</span>
+                </a> <!-- / #logo-header -->
+         
+            </header><!-- / #main-header -->
+            
     <form name="myForm">
-        <input type="file" id="myInput" />
+        <input class="ingresar" type="file" id="myInput" />
+        <div class="analizador"> 
+            <div class="hijo">
     <table width="280" cellspacing="1" cellpadding="3" border="0" bgcolor="#1E679A"> 
         <tr> 
            <td><font color="#FFFFFF" face="arial, verdana, helvetica"> 
@@ -17,14 +29,18 @@
            </font></td> 
         </tr> 
         <tr> 
-           <td bgcolor="#ffffcc"> 
+           <td bgcolor="#dfe1ed"> 
            <font face="arial, verdana, helvetica"> 
             <pre id="contenido-archivo"></pre>
            </font> 
            </td> 
         </tr> 
         </table> 
+    </div>
+</div>
+    
     </form>
+
     <script type="text/javascript" src="./analizador.js"></script>
     <script type="text/javascript" src="./leer.js"></script>
     <script type="text/javascript" src="./archivo.js"></script>

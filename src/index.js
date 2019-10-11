@@ -42,6 +42,18 @@ app.get('/analizador.js',(req,res) => {
   // res.send('<h1> orale puto </h1>')
  res.sendFile(path.join(__dirname+'/views/analizador.js'));
 });
+app.get('/style.css',(req,res) => {
+  // res.send('<h1> orale puto </h1>')
+ res.sendFile(path.join(__dirname+'/views/style.css'));
+});
+app.get('/img/header.jpg',(req,res) => {
+  // res.send('<h1> orale puto </h1>')
+ res.sendFile(path.join(__dirname+'/views/img/header.jpg'));
+});
+app.get('/img/mountains.jpg',(req,res) => {
+  // res.send('<h1> orale puto </h1>')
+ res.sendFile(path.join(__dirname+'/views/img/mountains.jpg'));
+});
 
 
 //escucha
