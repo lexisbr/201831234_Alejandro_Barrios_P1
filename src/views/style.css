@@ -133,7 +133,7 @@ nav ul {
                           }
                           .hijo {
                             background: red;
-                            width: 280px;
+                            width: 300px;
                           }
 
                           .ingresar{
@@ -149,7 +149,14 @@ nav ul {
                             text-align: center;
                           }
                           article{
-                            position:absolute; top:200px; left:50px;
+                            position:absolute; top:400px; left:50px;
+                            background-color: #d4a4a4;
+                            display: block;
+                            text-align: center;
+                            padding: 20px;
+                        }
+                        .auto{
+                            position:absolute; top:400px; left:500px;
                             background-color: #d4a4a4;
                             display: block;
                             text-align: center;

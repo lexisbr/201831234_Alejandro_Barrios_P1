@@ -1,13 +1,13 @@
 
 var input = myForm.myInput;
 var reader = new FileReader;
-var palabrasReservadas = ["entero","decimal","booleano","cadena","si","sino","mientras","hacer","VERDADERO","FALSO","for","while","int","char","String"];
+var palabrasReservadas = RegExp("(entero|decimal|booleano|cadena|si|sino|mientras|hacer|VERDADERO|FALSO|para|for|while|int|char|String)");
 var espacio=' ';
 var automata = new Array(9);
 var er1 = /[a-z]|[A-Z]/;
 var er2 = /[0-9]/;
 var vacio = RegExp(' ');
-var operador =RegExp("{+,-}") ;
+var operador =  /[+|-|=]/;
 var agrupacion = /(|)|{|}/;
 var signo = /"|;/;
 var token = new Array();
@@ -73,18 +73,17 @@ function onLoad() {
       }
         console.log("variable: "+token[i]);
      // }*/
-     for(var i=0;i<result.length;i++){
-      console.log("TOKEN: "+token[i]);
-      for(var o=0;o<palabrasReservadas.length;o++){
-    if(token[i]==palabrasReservadas[o]){
-      historial.innerHTML = historial.innerHTML + "<li class=\"list-group-item\">"+token[i]+" - "+"Palabra Reservada"+"</li>";
-      console.log("Palabra Reservada: "+token[i]);
+      for(var o=0;o<palabras;o++){
+    if(palabrasReservadas.test(token[o])){
+      historial.innerHTML = historial.innerHTML + "<li class=\"list-group-item\">"+token[o].split(" ")+" - "+"Palabra Reservada"+"</li>";
+    }
+    if(operador.test(token[o])){
+      historial.innerHTML = historial.innerHTML + "<li class=\"list-group-item\">"+token[o]+" - "+"Operador"+"</li>";
+
     }
   }
   
 }
-    }
-
 
   
   function palabrasR(){

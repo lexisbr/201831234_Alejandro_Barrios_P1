@@ -1,1 +1,1 @@
-int a; Boolean i=true; if if(i) { a++ } for
+entero a; booleano i=VERDADERO; si si(i) { a++ } para

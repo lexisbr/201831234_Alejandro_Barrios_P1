@@ -54,6 +54,10 @@ app.get('/img/mountains.jpg',(req,res) => {
   // res.send('<h1> orale puto </h1>')
  res.sendFile(path.join(__dirname+'/views/img/mountains.jpg'));
 });
+app.get('/img/automata.png',(req,res) => {
+  // res.send('<h1> orale puto </h1>')
+ res.sendFile(path.join(__dirname+'/views/img/automata.png'));
+});
 
 
 //escucha
