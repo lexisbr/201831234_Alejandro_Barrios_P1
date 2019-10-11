@@ -148,3 +148,10 @@ nav ul {
                             height: 100px;
                             text-align: center;
                           }
+                          article{
+                            position:absolute; top:200px; left:50px;
+                            background-color: #d4a4a4;
+                            display: block;
+                            text-align: center;
+                            padding: 20px;
+                        }

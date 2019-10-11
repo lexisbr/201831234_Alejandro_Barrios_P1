@@ -1,9 +1,1 @@
-int a;
-Boolean i=true;
-
-if
-if(i)
-{
-a++
-}
-for
+int a; Boolean i=true; if if(i) { a++ } for
