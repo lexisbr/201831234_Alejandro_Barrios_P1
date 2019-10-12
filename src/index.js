@@ -19,43 +19,43 @@ app.get('/',(req,res) => {
    // res.render('index',{max: 15});
 });
 app.get('/hola',(req,res) => {
-   // res.send('<h1> orale puto </h1>')
+ 
   res.sendFile(path.join(__dirname+'/views/index.html'));
 });
 app.get('/info.html',(req,res) => {
-    // res.send('<h1> orale puto </h1>')
+  
    res.sendFile(path.join(__dirname+'/views/info.html'));
  });
  app.get('/analizador.html',(req,res) => {
-    // res.send('<h1> orale puto </h1>')
+   
    res.sendFile(path.join(__dirname+'/views/analizador.html'));
  });
  app.get('/archivo.js',(req,res) => {
-  // res.send('<h1> orale puto </h1>')
+  
  res.sendFile(path.join(__dirname+'/views/archivo.js'));
 });
 app.get('/leer.js',(req,res) => {
-  // res.send('<h1> orale puto </h1>')
+
  res.sendFile(path.join(__dirname+'/views/leer.js'));
 });
 app.get('/analizador.js',(req,res) => {
-  // res.send('<h1> orale puto </h1>')
+  
  res.sendFile(path.join(__dirname+'/views/analizador.js'));
 });
 app.get('/style.css',(req,res) => {
-  // res.send('<h1> orale puto </h1>')
+  
  res.sendFile(path.join(__dirname+'/views/style.css'));
 });
 app.get('/img/header.jpg',(req,res) => {
-  // res.send('<h1> orale puto </h1>')
+ 
  res.sendFile(path.join(__dirname+'/views/img/header.jpg'));
 });
 app.get('/img/mountains.jpg',(req,res) => {
-  // res.send('<h1> orale puto </h1>')
+ 
  res.sendFile(path.join(__dirname+'/views/img/mountains.jpg'));
 });
 app.get('/img/automata.png',(req,res) => {
-  // res.send('<h1> orale puto </h1>')
+  
  res.sendFile(path.join(__dirname+'/views/img/automata.png'));
 });
 
